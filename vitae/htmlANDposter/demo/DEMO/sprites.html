@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>雪碧图</title>
+</head>
+<style>
+body,ul,ol,li,li,img,div,dl,dt,dd,input,p{margin:0;padding:0;}
+li{
+	list-style:none;
+	width:60px;
+	height:60px;
+	overflow:hidden;}
+.sprites{
+	width:240px;
+	height:60px;
+	overflow:hidden;}
+.sprites li{
+	float:left;}
+	
+.sprites-a,.sprites-b,.sprites-c,.sprites-d{
+	width:240px;
+	height:120px;
+	transition:ease-in-out 0.4s;
+	}
+.sprites-a{
+	background:url(../images/sprites.png) no-repeat 0px 0;
+	}
+.sprites-b{
+	background:url(../images/sprites.png) no-repeat -60px 0;
+	}
+.sprites-c{
+	background:url(../images/sprites.png) no-repeat -120px 0;
+	}
+.sprites-d{
+	background:url(../images/sprites.png) no-repeat -180px 0;
+	}
+
+.sprites-a:hover,.sprites-b:hover,.sprites-c:hover,.sprites-d:hover{
+	transition:ease-in-out 0.4s;
+	}	
+.sprites-a:hover{
+	background:url(../images/sprites.png) no-repeat 0px -60px;
+	}
+.sprites-b:hover{
+	background:url(../images/sprites.png) no-repeat -60px -60px;
+	}
+.sprites-c:hover{
+	background:url(../images/sprites.png) no-repeat -120px -60px;
+	}
+.sprites-d:hover{
+	background:url(../images/sprites.png) no-repeat -180px -60px;
+	}
+</style>
+<body>
+<div class="sprites">
+  <ul> 
+     <li><div class="sprites-a"></div></li>
+     <li><div class="sprites-b"></div></li>
+     <li><div class="sprites-c"></div></li>
+     <li><div class="sprites-d"></div></li> 
+  </ul>
+</div>
+</body>
+</html>

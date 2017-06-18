@@ -1,0 +1,529 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*公用*/
+.Light_gray{ background:#F0F0F0;}
+.comWidth{width:1000px;margin-left:auto;margin-right:auto;}
+.leftArea{float:left;}
+.rightArea{float:right;}
+.hide{ display:none;}
+.show{ display:block;}
+.hr_30{ height:30px;}
+
+/*fixBar*/
+.fixBar{ position:fixed; height:30px; background:#FF8000; bottom:0; margin:0 auto; left:0; right:0; z-index:999999;}
+.fixBar li{ float:left; width:16.6%; text-align:center; font-size:16px; font-family:"微软雅黑"; background:#FF8000; line-height:30px; }
+.buwei{ width:165px;}
+.fixBar a{ color:#FFF;}
+.fixBar li:hover{ background:#1369C0;}
+.fixBar li:active{ background:#1369C0;}
+
+/*topBar*/
+.topBar{background:#F7F7F7;height:31px;line-height:31px;}
+.collection{background:url(../image/icon/collection.png) left center no-repeat;padding-left:19px;font-weight:bold;}
+.topBar a:hover{color:red;}
+
+/*logoBar*/
+.logoBar{background:#1D7AD9;height:84px;}
+.logo{padding-left:41px; padding-top:13px;}
+
+/*search*/
+.search_Box{width:440px; padding-left:185px; padding-top:23px;}
+.search_text{width:360px; height:35px; line-height:35px\9/*\9表示所有的ie浏览器*/; padding:0 5px; background-color:#FFF;}
+.search_btn{width:70px; height:35px; background-color:#FF8C00; font-size:14px; font-family:"Microsoft YaHei","微软雅黑";color:#FFF;}
+
+/*购物车*/
+.shopCar{width:145px; height:35px; background-color:#FF8C00; margin-top:23px; font:14px/35px "Microsoft YaHei","微软雅黑"; margin-right:59px;}
+.shoptext{ width:87px; /*font-size:14px; font-family:"Microsoft YaHei","微软雅黑"; line-height:35px;*/ color:#FFF; height:100%; background:url(../image/icon/shopCar.png) 10px center no-repeat; text-indent:38px; border-right:#E27A00 solid 1px;}
+.shopNum{ width:27px; border-left:#FF9C01 solid 1px; height:100%; background:url(../image/icon/shopNum.png) 33px center no-repeat; padding-right:29px; text-align:right;}
+
+/*navBox*/
+.navBox{ height:35px; background:#1369C0;}
+.shopClass{ width:190px;  position:relative;}
+.shopClass h3{line-height:35px; text-align:center;}
+.shopClass i{background:url(../image/icon/shopClass.png) left center no-repeat; width:11px; height:7px; overflow:hidden; display:inline-block; margin-left:11px;}
+.nav,.shopClass h3{ font-family:"Microsoft YaHei","微软雅黑"; color:#FFF;}
+.nav{ line-height:35px;}
+.nav li{ float:left;}
+.nav a{ height:35px; display:inline-block; padding:0 25px; color:#FFF;}
+.nav .active{ background:#4593FD;}
+
+/*商品弹出列表*/
+.shopClass_show{ background:#4593FD; position:absolute; width:100%; left:0; top:35px; border-bottom:#4593FD solid 1px;}
+.shopClass_item{  padding:11px 10px; border-bottom:#3487F2 solid 1px; border-top:#5AA1FE solid 1px;}
+.shopClass_item dt{ height:21px; background:url(../image/icon/shopClass_item.png) right center no-repeat;}
+.shopClass_item a{ color:#FFF;}
+.shopClass_item a:hover{ text-decoration:underline;}
+.shopClass_item .a{ font:14px/1 "Microsoft YaHei","微软雅黑";}
+.shopClass_item .b{ font:12px/1 "宋体"; background:url(../image/icon/b.png) left center no-repeat; width:48px; height:20px; display:inline-block; text-align:center; line-height:20px; text-decoration:underline;}
+.shopClass_item dd{ height:20px; line-height:20px;}
+
+/*指向列表状态*/
+.shopClass_active{ background:#FFF; border-left:#4593FD solid 1px;}
+.shopClass_active a{ color:#000;}
+.shopClass_active .a{ color:#4593FD;}
+.shopClass_active .b{ color:#FFF; text-decoration:none;}
+.shopClass_active dt{ background:none;}
+
+/*列表弹出菜单*/
+.shopClass_List{ width:568px; border:#DDDDDD solid 1px; background:#FFF; left:190px; top:35px; position:absolute; z-index:1;}
+.shopList_cont{ padding:5px 20px;}
+.shopList_item{ border-bottom:#E5E5E5 solid 1px; padding:8px 0; }
+.shopList_item dt{ font-weight:bold; height:24px; /*float:left; width:68px;*/ line-height:24px;}
+.shopList_item dt a{ color:#4B88DA;}
+.shopList_item dd{ /*float:left;*/ line-height:24px; /*padding-left:34px;*/ margin-top:-24px; padding-left:68px;}
+.shopList_item dd a{ margin-right:12px;}
+.shopList_item dd a:hover{ color:#FF7300;}
+.shopList_item .superbook{ color:#FF7300;}
+.shopList_links{ padding-top:15px; padding-bottom:15px;}
+.shopList_links a{ color:#FFF; background:#2785E6; height:26px; line-height:26px; display:inline-block; margin-right:10px; padding:0px 14px 0px 8px; }
+.shopList_links span{ width:7px; height:11px; background:url(../image/icon/shopClass_item.png) left center no-repeat; display:inline-block; margin-left:8px;}
+
+/*banner图片*/
+.banner{ margin-bottom:15px;}
+.banner_img{ float:right; overflow:hidden; position:relative;}
+.imgBox{ position:absolute; left:0; top:0;}
+.imgBox li{ float:left;}
+.imgBox img{ display:inline-block;}
+.imgNum{ position:absolute; left:0; bottom:10px; text-align:center; width:100%;}
+.imgNum a{ background:#fff; height:5px; width:20px; display:inline-block; margin-right:5px;}
+.imgNum .active{ background:#FF7700;}
+
+/*商品列表和家电left图片公用区域*/
+.banner_big,.banner_big img{ width:810px; height:326px;}
+.banner_big .imgBox{ width:1620px; height:326px;}
+
+.banner_sm,.banner_sm img{ width:190px; height:400px;}
+.banner_sm .imgBox{ width:380px; height:400px;}
+
+/*商品标题*/
+.shopTit{ height:44px; margin-bottom:15px;}
+.shopTit_bar h3{ font:24px/1.8 "Microsoft YaHei","微软雅黑"; font-weight:normal; float:left; padding-left:15px;}
+.shopTit_bar .shopIcon{ background:url(../image/icon/shopTit_bar.png) left center no-repeat; display:inline-block; width:44px; height:44px;float:left;}
+.shopTit_bar .more{ float:right; font:12px/1 "宋体"; padding-top:30px;}
+.shopTit_bar .more:hover{ text-decoration:underline;}
+
+/*家电列表*/
+.shopList{ margin-bottom:15px; height:400px;}
+
+.shopList .leftArea{ width:190px; height:400px;}
+.shopList .rightArea{ width:808px; height:398px; border:#CCCCCC solid 1px; overflow:hidden;}
+
+
+.shopList_top,.shopList_bot{ margin-right:-4px;}
+
+/*家电、食品列表右部分上端*/
+.shopList_top .shopList_big{ width:202px; height:279px; border-bottom:#E5E5E5 solid 1px; border-right:#E5E5E5 solid 1px; text-align:center;  font-family:"Microsoft YaHei","微软雅黑"; float:left;}
+.shopList_big h3{ font-size:16px;}
+.shopList_big p{ font-size:14px; margin:0px;color:#FF963F; line-height:22px;}
+
+/*家电、食品列表右部分下端*/
+.shopList_Sm{ height:116px; border-right:#E5E5E5 solid 1px; width:202px; float:left; padding-top:3px;}
+.shopSm_img{height:100px; width:108px; float:left; text-align:center;}
+.shopSm_world{ width:94px; height:100px; float:left; text-align:left;}
+.shopSm_world p{ color:000; padding-top:24px; line-height:18px; font-family:"宋体"; margin:0px;}
+.shopSm_world h3{ font-family:"Microsoft YaHei","微软雅黑"; font-size:16px; font-weight:normal; line-height:20px;}
+.shopSm_world h3 span{ color:#999; padding-right:5px; font-size:12px;}
+
+/*家电、食品列表项目状态*/
+.shopSm_active p{ color:#FF7300}
+
+/*间隔高度*/
+.height_24{ height:24px;}
+
+/*底部版权*/
+.copyRight{ background:#ccc; text-align:center; padding:30px 0; font-family:"宋体";}
+.copyRight i{ font-style:normal; margin:0 4px;}
+.webLinks{ padding-top:24px;}
+.webLinks img{margin-right:24px; }
+.copyRight a{ color:#000;}
+.copyRight a:hover{ color:#F90;}
+
+
+
+
+
+
+
+
+/*______________________________________________________________________________________________________________*/
+
+/*产品分类*/
+
+/*产品清单(左侧)*/
+.banner_P{ margin-top:14px;}
+.banner_P .leftArea{ border:#CDCDCD solid 1px; font-family:"宋体"; color:#555555; background:#F3F3F3;}
+.product_class{ width:185px;text-align:center; font-size:14px; height:34px; line-height:34px; border-bottom:1px #CDCDCD solid;}
+.product_item { border-bottom:#555555 dotted 1px; padding:0 20px 5px;}
+.banner_P .leftArea .footer{ border-bottom:none;}
+.product_item h3{ line-height:30px; height:30px; font-size:12px;}
+.productList{ line-height:24px; width:145px;}
+.productList li{ float:left; width:50%;}
+
+/*产品列表（右侧）*/
+
+/*商品标题*/
+.banner_P .rightArea .banner_img{ float:none;}
+.hr_8{ height:8px;}
+.List_tite{height:33px; border-bottom:#CCC solid 2px;}
+.List_tite h3{ font-family:"宋体"; line-height:33px; padding-left:9px; width:180px; border-bottom:#096DBA solid 2px; margin-bottom:-2px; position:relative;}
+
+/*商品清单*/
+.product_List{width:810px; margin-bottom:24px;}
+.product_List .list_Item{ width:25%;*width:24.9%;}
+.list_Item{ float:left; }
+.list_Item .img_Item{ height:170px; text-align:center;}
+.list_Item p{ line-height:20px; margin-left:18px; font-family:"Microsoft YaHei","微软雅黑";}
+.list_Item .money{ margin-top:14px; color:#D4105A;}
+.list_Item  img{height:170px;}
+.list_Item span{ padding-top:3px;}
+.list_Item .star{ width:15px; height:12px; overflow:hidden; background:url(../image/icon/score.png) left bottom no-repeat; display:inline-block;}
+.list_Item a{ color:#089ED9;}
+.list_Item a:hover{ text-decoration:underline;}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/*产品筛选*/
+
+/*左侧清单*/
+.screen .product_item{ border-bottom:#D7D7D7 dotted 1px;}
+.screen h3{font-family:"Microsoft YaHei","微软雅黑";}
+.screen .product_class{font-size:16px;}
+.screen .product_item{ padding:6px 20px;}
+.screen .product_item h3{font-size:14px; line-height:24px; height:24px;}
+.screen li{ float:none; padding-left:12px;}
+
+/*右侧列表*/
+.screen_list .screen_Item{ border-bottom:#D7D7D7 dotted 1px; line-height:32px; font-family:"Microsoft YaHei","微软雅黑";}
+.screen_list dt{ width:76px; text-align:right; float:left; color:#999999; margin-right:40px;}
+.screen_list dd{ float:left; text-align:left;}
+.screen_list a{color:#1D7AD9;}
+.screen_list .limit{ margin-right:24px;}
+.screen_list .active{ color:#fff;  background:#1D7AD9;  padding:2px;}
+.screen_list .cate_phone a{ margin-right:110px;}
+.screen_list .cate_brand,.screen_list .cate_other{ width:500px;}
+.screen_list .cate_brand li{ width:25%; float:left;}
+.screen_list .screen_more a{ background:url(../image/icon/more.png) right center no-repeat; color:#000; display:inline-block; width:34px;}
+.screen_list .screen_more a:hover,.screen_list .cate_brand a:hover,.screen_list .cate_phone a:hover,.screen_list .cate_other a:hover{ text-decoration:underline;}
+.screen_list .cate_other a{ margin-right:30px;}
+.screen_list .cate_more{margin-right:10px; margin-top:4px; border:#D7D7D7 1px solid; height:24px; line-height:24px; padding:0 8px;}
+.screen_list .cate_more a{ background:url(../image/icon/more.png) right center no-repeat; padding-right:12px; color:#000;}
+
+/*配送信息*/
+.hr_14{ height:14px;}
+
+.shop_dis{ height:32px; border:#D9D9D9 1px solid; line-height:32px; background-color:#F5F5F5; font-family:"Microsoft YaHei","微软雅黑";vertical-align:middle;}
+.shop_dis .address_text{ padding:0 6px 0 10px;}
+.infor_dis input{ margin:0px 4px 0 0;}
+.infor_dis input,.infor_dis lable{ vertical-align:middle;}
+.infor_dis .shop_number{padding:0 84px 0 12px; color:#999999;}
+.infor_dis .shop_number em{ color:#D80000; padding:0 2px;}
+
+/*地址菜单组件*/
+.address_dis .select{ float:left; height:22px; line-height:22px; border:#D9D9D9 1px solid; padding:0 20px 0 10px; position:relative; margin-top:4px; background-color:#FFF;}
+.address_dis .select i{background:url(../image/icon/select.JPEG) center center no-repeat; right:0; top:0; width:10px; height:100%; padding-right:10px; position:absolute;}
+.address_dis .select .show_select{border:#D9D9D9 1px solid; width:100%; position:absolute; margin-left:-1px; left:0; top:22px; text-indent:10px; background-color:#FFF; display:none;}
+
+/*商品展示*/
+.screen_shop{ padding:0 60px; width:690px;}
+.screen_shop .shop_show{ width:33.3%; padding-top:30px;}
+.screen_shop .shop_show .money{ margin-top:10px; font-weight:bold;}
+.screen_shop .shop_show .money span{ font-weight:normal; padding-left:8px; color:#666666;}
+.screen_shop .shop_show .shop_car a{ border:#C3D5E7 solid 1px; background:url(../image/icon/shop_car.png) 6px center no-repeat; padding:0 10px 0 24px; height:22px; line-height:22px; color:#3A78C1;}
+
+/*翻页栏*/
+.page{ text-align:center;} 
+.page a{ text-align:center; border:#DDDDDD solid 1px; height:26px; line-height:26px; padding:0 12px; margin:0 2px; display:inline-block;}
+.page .active{ background-color:#2266BB; color:#FFF;}
+.page .hl{ margin:0 2px;}
+.page .text{ margin:0 12px; font-size:14px;}
+.page input{ height:22px; line-height:22px; border:#DDDDDD solid 1px;}
+.pageNum{  width:34px;  margin:0 5px 0 -5px; text-align:center; font-family:"宋体";}
+.pageBtn{  width:44px; line-height:22px; margin-left:7px; background-color:#E8E8E8;}
+.page a,.page span,.page input{ vertical-align:center;}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+/*商品详情页*/
+.Light gray{ background-color:#F0F0F0;}
+.Now_location{ padding:25px 0 15px 0; color:#555555;}
+.Now_location a:hover{ text-decoration:underline;}
+
+/*商品展示 Img_show*/
+/*左侧*/
+.Img_show{ border:#CCCCCC solid 1px; margin-bottom:14px; background-color:#FFF;}
+.Img_show .leftArea{ width:309px;text-align:center;}
+.Img_show .img_small{ width:266px; margin:0 auto;}
+.Img_show .leftArea li{ float:left; border:#CCCCCC solid 1px; margin-left:-1px; }
+.Img_show .active{ border:#317EE7 solid 1px; position:relative;}
+
+/*地址组件浮动*/
+.Img_show .address_dis span{ float:left;}
+
+/*地址组件与左侧对齐*/
+.options_Item .select{ margin-top:-4px; margin-right:10px; color:#317EE7;}
+
+/*右侧*/
+.Img_show .rightArea{ width:688px; text-align:left; border-left:#CCCCCC 1px solid;}
+.Img_show .Product_screen{ margin-top:24px; margin-left:26px;}
+.Img_show h3{ font:bold 16px/22px "Microsoft YaHei","微软雅黑";}
+
+.Img_show .options_Item{ margin:20px 0;}
+.Img_show span{ color:#666;}
+
+.Img_show .Name{float:left; width:60px; display:inline-block;}
+.Img_show .Explain{ background:url(../image/icon/Explain.jpg) left center no-repeat; padding-left:58px;}
+
+.Img_show .money_name{ line-height:20px;}
+.Img_show span em{ font-size:18px; line-height:18px; color:#D70000; font-family:"Microsoft YaHei","微软雅黑";}
+
+.Img_show .color_name{ line-height:34px;}
+.Img_show .options_Item .color{ float:left; width:82px; height:32px; line-height:32px; border:#CCCCCC solid 1px; text-align:center; margin-right:8px;;}
+
+
+.Img_show .size_name{ line-height:68px;}
+.Img_show .options_Item .size{ float:left; padding:8px 10px; border:#CCCCCC 1px solid; margin-right:10px; margin-bottom:8px;}
+
+.Img_show .number_name{ line-height:32px;}
+.Img_show .number_Scr{ border:#CCC solid 1px; height:32px; width:82px; display:inline-block; text-align:center;}
+.Img_show .number_Scr div,.Img_show .number_Scr input{ float:left; height:32px; line-height:32px;}
+.Img_show .number_Scr div{ width:15px;}
+.Img_show .number_Scr input{ width:50px; border-left:#CCC solid 1px; border-right:#CCC solid 1px; text-align:center;}
+
+.Img_show .Choose{ padding:20px 0;}
+.Img_show .choose_number,.choose_Scr{ font-weight:bold;}
+.Img_show .choose_Scr{ color:#0479CA;}
+
+.Img_show .button_Scr a{ background:url(../image/icon/shopCar.png) 30px center no-repeat; padding:14px 28px 14px 78px; background-color:#FE8900; margin-right:80px; color:#FFF; font-family:"Microsoft YaHei","微软雅黑"; display:inline-block; font-size:20px;}
+
+.Img_show .Notes{ padding:20px 0; display:inline-block;}
+
+.Img_show .options_Item .active{ border:#317EE7 solid 1px;}
+
+/*产品延伸 prpduct_Etn*/
+
+/*左侧*/
+.prpduct_Etn .leftArea{ width:188px; padding-bottom:10px;}
+.prpduct_Etn .leftArea .Etn_box h3{ font-size:14px; color:#333; height:38px; line-height:38px; padding-left:14px; border-top:#1D86CF solid 2px; margin-top:-1px; border-bottom:#CCC solid 1px; background:#F3F3F3}
+
+/*展示价格*/
+.prpduct_Etn .leftArea .Etn_box{ margin-bottom:10px; border:#CCC solid 1px;}
+.prpduct_Etn .leftArea .Etn_box .Etn_shop{ background:#FFF;}
+.prpduct_Etn .leftArea .Etn_box .Etn_shop_money{ width:85%; padding-left:14px; margin-bottom:18px;}
+.prpduct_Etn .leftArea .Etn_box .Etn_shop_img{ text-align:center; padding:18px 0;}
+.prpduct_Etn .leftArea .Etn_box p{ line-height:18px; color:#999999;}
+.prpduct_Etn .leftArea .Etn_box em{ color:#DD0000; font-family:"Microsoft YaHei","微软雅黑"; padding:2px 0;}
+
+/*右侧*/
+/*标题*/
+.prpduct_Etn .rightArea{ width:790px;}
+.prpduct_Etn .Etn_box{ border:#CCC solid 1px; margin-bottom:10px;}
+.prpduct_Etn li{ float:left;}
+.prpduct_Etn .Etn_box .shop_Tit{ width:788px; border-bottom:#CCC solid 1px;}
+.prpduct_Etn .Etn_box .shop_Tit li{ width:50%; text-align:center; height:39px; margin-left:-1px; border:#CCC 1px solid; border-bottom:none; border-right:none; font:14px/39px "宋体"; margin-bottom:1px; background-color:#F1F1F1;}
+.prpduct_Etn .Etn_box .shop_Tit li span{ background:url(../image/icon/shop_Tit01.png) left center no-repeat; padding-left:36px; display:inline-block;}
+.prpduct_Etn .Etn_box .shop_Tit .active{ background-color:#0479CA;}
+.prpduct_Etn .Etn_box .shop_Tit .active span{ background:url(../image/icon/shop_Tit02.png) left center no-repeat; color:#FFF; font-weight:bold;}
+
+/*内容*/
+.prpduct_Etn .Etn_box .shop_Score{ font-size:14px; font-weight:bold; color:#656565; padding:10px 0 20px 0; margin-left:20px;}
+
+.prpduct_Etn .Etn_box .shop_Grade{margin-left:20px; vertical-align:middle;}
+
+.baise{ background:#FFF;}
+.prpduct_Etn .Etn_box .shop_Grade .grade_Num{ font-size:50px; font-family:"Microsoft YaHei","微软雅黑"; color:#FF8F00; margin-right:10px;}
+.prpduct_Etn .Etn_box .shop_Grade em{ font-size:18px; color:#66667D;}
+.prpduct_Etn .Etn_box .grade_icon i{ background:url(../image/icon/shop_Score_icon.jpg) right top no-repeat; width:27px; height:20px; display:inline-block; color:#FFF; font-style:normal; text-align:center; font-family:"Microsoft YaHei","微软雅黑"; position:absolute;}
+.prpduct_Etn .Etn_box .shop_Grade .grade_Score{ width:450px; color:#65657D; margin-top:-8px;position:relative;}
+.prpduct_Etn .Etn_box .shop_Grade .grade_icon{ margin-bottom:10px; padding-left:94%;}
+.prpduct_Etn .Etn_box .shop_Grade .grade_Score span{ padding-bottom:10px; display:inline-block;}
+
+.hr_30{ height:30px; background:#FFF;}
+
+.prpduct_Etn .Etn_box .all_score{ padding-left:20px; height:32px; line-height:32px; background-color:#F2F2F2;}
+.prpduct_Etn .Etn_box .all_score dt,.left{ float:left;}
+.prpduct_Etn .Etn_box .all_score dt{ margin-right:44px; color:#317DE6; font-weight:bold; border-bottom:2px solid #317EE7;  margin-bottom:-1px; padding:0 6px;}
+.prpduct_Etn .Etn_box .all_score .left span{ margin-right:40px;  color:#000;}
+.prpduct_Etn .Etn_box .all_score .left .active{color:#317DE6;}
+.prpduct_Etn .Etn_box .all_score .right{ float:right; padding-right:10px;}
+.prpduct_Etn .Etn_box .all_score .right span{ background:url(../image/icon/sort.jpg) 58px center no-repeat; border:#CCC 1px solid; border-bottom:none; padding:4px 20px 4px 5px; color:#000;}
+/*.prpduct_Etn .Etn_box .all_score .right i{ background:url(../image/icon/New.png) left top no-repeat; width:28px; height:16px; display:inline-block; margin-top:-20px;}*/
+
+.prpduct_Etn .Etn_box .shop_Member{ padding:17px 24px 20px 40px;}
+.Member_box,.Member_eva{ float:left;}
+.Member_time{ float:right;}
+.Member_box .icon{ margin-bottom:6px;}
+.Member_box p{ text-align:center; color:#77778B; font-size:12px; font-family:"微软雅黑";}
+.Member_eva{ padding-left:70px;}
+.Member_eva .text{ margin:16px 0 12px 0; color:#777777; line-height:18px;}
+.Member_eva .click em{ color:#075B9B;}
+.Member_eva i{ background:url(../image/icon/score.png) left center no-repeat; width:15px; height:14px; display:inline-block; vertical-align:middle;}
+.Member_eva .deg{ font-weight:bold; vertical-align:middle;}
+.Member_eva .deg span{ vertical-align:center; display:inline-block; vertical-align:middle; padding-left:14px;}
+.Member_time{ color:#ABABAB;}
+.Etn_box .page{ padding-right:14px; padding-bottom:30px; }
+.Etn_box .page .active{ background:#E9E9E9; color:red;}
+.Etn_box .page .pageNum{ margin-left:5px;}
+.baise_page{ background:#FFF; width:786px; height:60px;}
+
+/*隔断*/
+.hr_4{ height:4px;}
+
+/*咨询*/
+.consult{ background:#FFF;}
+.consult .title{ line-height:42px; color:#075B9B;}
+.all_con{ width:134px; height:34px; border:1px solid #0688BA; border-bottom:0; text-align:center; font-size:14px; font-weight:bold;}
+.pub_con{ border-bottom:#0688BA 1px solid; width:628px; height:34px; text-align:right; padding-right:26px;}
+
+.promput{ width:714px; background:#F3F3F3; line-height:24px; color:#777777; margin:10px auto; padding:0 20px;}
+
+.Con_Vip{ margin:18px 0  20px 0;}
+.con_box{ margin-left:68px; text-align:center;}
+.con_box p{ line-height:16px;}
+.con_shop{ margin-left:34px;}
+.con_shop{ line-height:26px;}
+.con_deg{ font-weight:bold; font-size:14px;}
+.con_text{ color:#777777; padding-bottom:5px;}
+.con_reply{ width:578px; height:56px; background:#F1F1F1; line-height:56px; padding-left:28px;}
+.con_reply span{ color:#777777;}
+
+.consult .page{ padding-right:46px;}
+.consult .page .active{ color:red; background:#E9E9E9;}
+.consult .page .pageNum{ margin-left:5px; text-align:left; width:30px; height:20px; line-height:20px;} 
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+/*购物车和结算*/
+
+/*进度条*/
+.Prog_bar{ margin-right:52px; margin-top:30px;}
+.Prog_bar ul{ margin-top:8px;}
+.Prog_bar li{ float:left;}
+.Prog_bar .my_car,.Prog_bar .submit_suce{ width:30%;}
+.Prog_bar .check_ord{ width:40%; text-align:center;}
+.Prog_bar .submit_suce{ text-align:right;}
+.Prog_bar .active{ color:#F3E402; font-weight:bold;}
+
+/*购物信息*/
+.Shopping_Info{ border:solid 1px #C2C2C2; margin-top:12px;}
+.receiving_info{ font-size:16px; width:100%; height:30px; line-height:30px; text-indent:0.5em; background:url(../image/image/Gradient_color.jpg) left center repeat-x; border-bottom:#E3E3E3 solid 1px; border-top:1px solid #FFF;}
+.hr_24{ height:24px;}
+.contact_info{ padding-left:30px;}
+.contact_info li{ height:34px; line-height:34px;}
+.contact_info em{ color:#FF0000;}
+.contact_info input{ border:solid 1px #C2C2C2; height:24px; text-indent:0.8em; color:#C2C2C2;}
+/*元件浮动*/
+.contact_info .address_dis em,.contact_info .address_dis span{ float:left;}
+/*input框架大小*/
+.add_input{ width:390px;}
+.man_input,.pho_input{ width:110px;}
+.area_code{ width:62px;}
+.phone_num,.extension_num{ width:96px;}
+/*提交按钮*/
+.confirm{ width:112px; height:26px; background:url(../image/image/Gradient_color_01.jpg) left center repeat-x; border:#3784ED 1px solid; margin:20px 0 14px 30px; color:#FFF;} 
+
+/*支付方式*/
+.Payment_method{ padding-left:30px;}
+.Payment_method label{ height:22px; line-height:22px; vertical-align:middle; display:block;}
+.Payment_method input,.Payment_method em{ vertical-align:middle;}
+.Payment_method input{ margin-right:8px;}
+.Payment_method em{ background:url(../image/icon/Wechat.jpg) left center no-repeat; display:inline-block; width:25px; height:19px;}
+.hr_26{ height:26px;}
+
+/*发票信息*/
+.need_inv{ padding-left:30px; height:22px; line-height:22px; vertical-align:middle;}
+.need_inv input{ vertical-align:middle; width:13px; height:13px; margin-right:5px;}
+.indent{ padding-left:38px;}
+.brand{ margin-top:3px; margin-left:4px;}
+/*按钮*/
+.Pre_Cane{ margin:12px 0 26px 48px;}
+.Pre,.Cane{ width:64px; height:24px; margin-right:10px;}
+.Pre{ background:url(../image/image/Gradient_color_01.jpg) left center repeat-x; border:#3784ED 1px solid; color:#FFF;}
+.Cane{ background:url(../image/image/Gradient_color_02.jpg) left center repeat-x; border:#CCCCCC 1px solid; color:#666666;}
+
+/*送货清单*/
+.List_info{ height:34px; line-height:34px; border-bottom:1px solid #E6E6E6; padding-left:30px;}
+.List_info li{ float:left;}
+.List_info .shopping_name{ width:438px;}
+.List_info .unit_price{ width:136px;}
+.List_info .back_now{ width:134px;}
+.List_info .number{ width:134px;}
+.List_info .subtotal{ width:124px;}
+/*具体商品 Specific commodity*/
+.Specific_comm{ height:100px; overflow:hidden;}
+.Specific_comm .Img_show_pic{ width:90px; height:100px;}
+.Specific_comm .shopping_name{ width:348px;}
+.Specific_comm  p{ margin-bottom:20px;}
+.Specific_comm a:hover{ text-decoration:underline;}
+.Specific_comm .top{ color:#8F6C44;}
+.Specific_comm .foot{ color:#444444;}
+.Specific_comm .subtotal{ color:#D70000;}
+/*留言message*/
+.message a{ height:40px; line-height:40px; color:#3377FF; padding-left:30px;}
+.message a:hover{ text-decoration:underline;}
+/*提示prompt*/
+.prompt{ padding-left:30px; height:54px; line-height:54px;}
+.prompt em{ width:12px; height:12px; background:url(../image/icon/Prompt.jpg) left center no-repeat; display:inline-block; vertical-align:middle;}
+.prompt span{ color:#EE0000; padding-left:10px; vertical-align:middle;}
+/*无法购买的商品cannot_buy*/
+.cannot_buy{ height:82px; margin-bottom:10px;}
+.cannot_buy .cannot_buy_img{ width:80px; height:82px; margin-right:10px;}
+.cannot_buy .text{ line-height:20px; color:#666666;}
+.cannot_buy .text span{ font-weight:bold; color:#D70000;}
+
+/*订单结算Order_sett*/
+.Order_sett{ padding-right:25px; position:relative; text-align:right; font-family:"微软雅黑";}
+.Order_sett .shop_pric{ font-size:10px; color:#929292; margin-bottom:24px; margin-right:30px;}
+.Order_sett .shop_pric span{ font-size:24px; color:#EE0000; margin-left:18px;}
+.Order_sett .place_ord{ height:32px; width:164px; background:#EE0000; color:#FFF; text-align:center;}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+/*登录页*/
+/*logo图标*/
+.LoginTit{ width:460px; margin:auto;}
+.LoginTit .logo a,.LoginTit .logo p{ float:left;}
+.LoginTit .logo p{ font-size:22px; font-family:"微软雅黑"; color:#FFF; padding-left:24px; line-height:66px;}
+
+/*登录框*/
+.hr_10{ height:10px;}
+.hr_42{ height:40px;}
+
+.loginBox{ padding-left:86px; width:374px; border:#E1E1E1 1px solid; padding-bottom:14px;}
+.loginBox .login_info p{ color:#999999; height:20px; line-height:20px;}
+.loginBox .login_info input{ height:32px; width:304px; border:#CCCCCC 1px solid; text-indent:0.5em; margin-bottom:12px; color:#CCC;} 
+.loginBox .login_info .loguser{ background:url(../image/icon/user.jpg) right center no-repeat;}
+.loginBox .login_info .loglock{ background:url(../image/icon/lock.jpg) right center no-repeat;}
+/*登录选择login_options*/
+.login_options{ padding-left:4px; height:44px; line-height:44px;}
+.login_options input{ vertical-align:middle;}
+.login_options span{ color:#333333; vertical-align:middle; padding:0 14px 0 4px;}
+.login_options a:hover{ text-decoration:underline;}
+/*登录按钮login_in*/
+.login_in input{ height:34px; width:306px; background:url(../image/image/Gradient_color_03.jpg) left center repeat-x; border:#BBCFE5 1px solid;  text-align:center; color:#606060; margin-top:14px; margin-bottom:28px; font: bold 16px/34px "微软雅黑";} 
+/*其他方式登录login_other*/
+.login_other p{ height:20px; line-height:20px;}
+.login_other .word{ color:#999999;}
+.login_other .link a{ color:#666; padding:0 3px;}
+.login_other .link a:hover{ text-decoration:underline;}
+.login_other .link i{color:#999999; font-style:normal;}
+.login_other .link em{ background:url(../image/icon/more.png) left center no-repeat; height:5px; width:7px; display:inline-block; margin-left:4px;} 
+/*免费注册free_regi*/
+.free_regi{ text-align:right;padding-right:40px;}
+
+
+
+
+
+
+

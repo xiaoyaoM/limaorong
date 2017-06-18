@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo</title>
+</head>
+<style type="text/css">
+body{
+     margin:auto;}
+.show{
+	width:800px;
+	height:1000px;
+	margin:auto;
+	}
+textarea{
+	width:100%;
+	height:100%;
+	background:#CCC;}
+h3{
+	line-height:10px;}
+.preview{
+	text-align:left;}
+	
+.hr_800{
+	width:800px;
+	height:1px;
+	background-color:#000;}
+	
+.hr_80{
+	height:80px;}
+	
+a{
+	color:#09F;
+	text-decoration:none;}
+a:hover{
+	text-decoration:underline;}
+</style>
+
+
+<!----正文内容><-->
+<body>
+
+<div class="show">
+<h3>雪碧图</h3>
+<textarea id="sprites" wrap="logical">
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>雪碧图</title>
+</head>
+<style>
+body,ul,li,img,div,p{margin:0;padding:0;}
+
+li{
+	list-style:none;
+	width:60px;
+	height:60px;
+	overflow:hidden;}
+.sprites{
+	width:240px;
+	height:60px;
+	overflow:hidden;}
+.sprites li{
+	float:left;}
+	
+.sprites-a,
+.sprites-b,
+.sprites-c,
+.sprites-d{
+	width:240px;
+	height:120px;
+	transition:ease-in-out 0.4s;
+	}
+.sprites-a{
+	background:url(../images/sprites.png) no-repeat 0px 0;
+	}
+.sprites-b{
+	background:url(../images/sprites.png) no-repeat -60px 0;
+	}
+.sprites-c{
+	background:url(../images/sprites.png) no-repeat -120px 0;
+	}
+.sprites-d{
+	background:url(../images/sprites.png) no-repeat -180px 0;
+	}
+
+.sprites-a:hover,
+.sprites-b:hover,
+.sprites-c:hover,
+.sprites-d:hover{
+	transition:ease-in-out 0.4s;
+	}	
+.sprites-a:hover{
+	background:url(../images/sprites.png) no-repeat 0px -60px;
+	}
+.sprites-b:hover{
+	background:url(../images/sprites.png) no-repeat -60px -60px;
+	}
+.sprites-c:hover{
+	background:url(../images/sprites.png) no-repeat -120px -60px;
+	}
+.sprites-d:hover{
+	background:url(../images/sprites.png) no-repeat -180px -60px;
+	}
+</style>
+
+<body>
+<div class="sprites">
+  <ul> 
+     <li><div class="sprites-a"></div></li>
+     <li><div class="sprites-b"></div></li>
+     <li><div class="sprites-c"></div></li>
+     <li><div class="sprites-d"></div></li> 
+  </ul>
+</div>
+</body>
+
+</html>
+</textarea>
+
+<div class="preview">
+  <a href="DEMO/sprites.html" target="_blank">
+    <h3>效果预览</h3>
+  </a>
+</div>
+
+
+<!--第二个><-->
+
+
+<div class="hr_800"></div>
+<h3>图片动效</h3>
+
+<textarea id="effect" wrap="logical">
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>图片动态效果</title>
+</head>
+<style>
+/*===公用===*/
+body,figure{
+	margin:0;
+	padding:0;}
+	
+figure{
+	position:relative;
+	width:450px;;
+	height:300px;
+	overflow:hidden;
+	float:left;
+	background:#999;
+	}
+	
+figcaption p{
+	line-height:10px;}
+
+figure img{
+	opacity:1;
+	transition:all 0.2s;}	
+figure:hover img{
+	opacity:0.8;}
+		
+	
+/*===move===*/	
+.move figcaption{
+	position:absolute;
+	top:0;
+	margin-left:5%;
+	margin-top:5%;}
+
+.move .up{
+	transition:transform 0.2s;
+	transform:translateX(-200px);}
+	
+.move:hover .up{
+	transform:translateX(0);}
+
+.move .under{
+	transition:transform 0.2s;
+	transition-delay:0.05s;
+	transform:translateX(-200px);}	
+.move:hover .under{
+	transition-delay:0.05s;
+	transform:translateX(0px);}
+
+	
+
+
+	
+/*===rotate==*/	
+.rotate figcaption{
+	position:absolute;
+	margin-left:5%;
+	margin-top:5%;
+	top:0;}
+	
+.rotate figcaption p{
+	padding-left:5px;}	
+	
+.rectangle{
+	width:398px;
+	height:248px;
+	border:#FFF 1px solid;
+	position:absolute;
+	transition:transform 0.2s;
+	transform:translateY(-300px) rotate(-360deg);}	
+.rotate:hover .rectangle{
+	transform:translateY(0) rotate(360deg);}
+	
+.rotate .up{
+	transition:all 0.3s;
+	transform:translateY(-50px);
+	opacity:0;}
+.rotate:hover  .up{
+	transform:translateY(0);
+	opacity:1;}
+	
+.rotate .under{
+	transition:all 0.3s;	
+	transform:translateY(80px);
+	opacity:0;}
+.rotate:hover  .under{
+	transform:translateY(0);
+	opacity:1;}
+	
+/*===zoom===*/
+.zoom figcaption{
+	position:absolute;
+	top:0;
+	margin-left:5%;
+	margin-top:5%;}
+	
+.zoom img{
+	transition:transform 0.2s;
+	transform:scale(1.2)}
+.zoom:hover img{
+	transform:scale(1)}
+	
+.zoom figcaption{
+	transform:scale(1.2);
+	transition:all 0.2s;
+	opacity:0;}
+.zoom:hover figcaption{
+	transform:scale(1);
+	opacity:1;}
+	
+</style>
+
+<body>
+<figure class="move">
+    <img src="../images/1-1.jpg" alt="">
+    <figcaption>
+      <p class="up">图片展示</p>
+      <P class="under">文字平移</P>
+    </figcaption>
+</figure>
+
+<figure class="rotate">
+    <img src="../images/1-2.jpg" alt="">
+    <figcaption>
+      <div class="rectangle"></div>
+      <p class="up">图片展示</p>
+      <P class="under">矩形旋转</P>
+    </figcaption>
+</figure>
+
+<figure class="zoom">
+    <img src="../images/1-3.jpg" alt="">
+    <figcaption>
+      <p>图片展示</p>
+      <P>大小缩放</P>
+    </figcaption>
+</figure>
+
+</body>
+
+
+
+</html>
+
+</textarea>
+
+<div class="preview">
+  <a href="DEMO/dynamic effect.html" target="_blank">
+    <h3>效果预览</h3>
+  </a>
+</div>
+
+<div class="hr_80"></div>
+</div>
+</body>
+</html>
